@@ -11,25 +11,25 @@ void Show_list(applicant* applicants, int size)
 
 void Output_applicant(applicant& applicants) {
     std::cout << "#" << applicants.id << ".\n";
-    std::cout << "ÔÈÎ: " << applicants.SNP << '\n';
-    std::cout << "Àäðåñ: ã. " << applicants.add.city << ", " << applicants.add.loc_addr << '\n';
-    std::cout << "Îöåíêè:\n\t" << "ïî ìàòåìàòèêe:" << applicants.m.mat << "\n\tïî ôèçèêå:" << applicants.m.phys << "\n\tïî áåëîðóññêîìó:" << applicants.m.bel << '\n';
+    std::cout << "Ð¤Ð˜Ðž: " << applicants.SNP << '\n';
+    std::cout << "ÐÐ´Ñ€ÐµÑ: Ð³. " << applicants.add.city << ", " << applicants.add.loc_addr << '\n';
+    std::cout << "ÐžÑ†ÐµÐ½ÐºÐ¸:\n\t" << "Ð¿Ð¾ Ð¼Ð°Ñ‚ÐµÐ¼Ð°Ñ‚Ð¸Ðºe:" << applicants.m.mat << "\n\tÐ¿Ð¾ Ñ„Ð¸Ð·Ð¸ÐºÐµ:" << applicants.m.phys << "\n\tÐ¿Ð¾ Ð±ÐµÐ»Ð¾Ñ€ÑƒÑÑÐºÐ¾Ð¼Ñƒ:" << applicants.m.bel << '\n';
     if (applicants.add.city == "Minsk") {
-        std::cout << "Ñðåäíèé áàëë: " << applicants.avg_m << "\n";
+        std::cout << "Ð¡Ñ€ÐµÐ´Ð½Ð¸Ð¹ Ð±Ð°Ð»Ð»: " << applicants.avg_m << "\n";
     }
-    std::cout << "Äîï. èíôîðìàöèÿ: ";
+    std::cout << "Ð”Ð¾Ð¿. Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ñ: ";
     if (applicants.extra.olympiad_place == 0) {
-        std::cout << "íåò\n";
+        std::cout << "Ð½ÐµÑ‚\n";
         std::cout << "--------------------------------------------------\n";
         return;
     }
-    else if (applicants.extra.gold_medal == "ìåäàëèñò") {
+    else if (applicants.extra.gold_medal == "Ð¼ÐµÐ´Ð°Ð»Ð¸ÑÑ‚") {
         std::cout << applicants.extra.gold_medal << '\n';
         std::cout << "--------------------------------------------------\n";
         return;
     }
     else {
-        std::cout << "äèïëîì " << applicants.extra.olympiad_place << " ñòåïåíè ïî îëèìïèàäå" << '\n';
+        std::cout << "Ð´Ð¸Ð¿Ð»Ð¾Ð¼ " << applicants.extra.olympiad_place << " ÑÑ‚ÐµÐ¿ÐµÐ½Ð¸ Ð¿Ð¾ Ð¾Ð»Ð¸Ð¼Ð¿Ð¸Ð°Ð´Ðµ" << '\n';
         std::cout << "--------------------------------------------------\n";
     }
     
