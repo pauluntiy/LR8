@@ -4,7 +4,7 @@
 void Search_applicant(applicant* applicants, int size)
 {
 	int target;
-	std::cout << "Ââåäèòå # èñêîìîãî àáèòóðèåíòà:\n";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ # Ð¸ÑÐºÐ¾Ð¼Ð¾Ð³Ð¾ Ð°Ð±Ð¸Ñ‚ÑƒÑ€Ð¸ÐµÐ½Ñ‚Ð°:\n";
 	std::cin >> target;
 	for (int i = 0; i < size; ++i) {
 		if (applicants[i].id == target) {
@@ -39,5 +39,5 @@ void quick_sort(applicant* applicants, int left, int right) {
 void Sort_applicants_by_avgm(applicant* applicants, int size)
 {
     quick_sort(applicants, 0, size - 1);
-    std::cout << "Ñïèñîê îòñîðòèðîâàí ïî óáûâàíèþ îöåíêè ïî ìàòåìàòèêå.\n";
+    std::cout << "Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð¾Ñ‚ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½ Ð¿Ð¾ ÑƒÐ±Ñ‹Ð²Ð°Ð½Ð¸ÑŽ Ð¾Ñ†ÐµÐ½ÐºÐ¸ Ð¿Ð¾ Ð¼Ð°Ñ‚ÐµÐ¼Ð°Ñ‚Ð¸ÐºÐµ.\n";
 }
