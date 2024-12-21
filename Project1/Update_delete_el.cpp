@@ -4,7 +4,7 @@
 void Update_applicant(applicant* applicants, int size)
 {
 	int target;
-	std::cout << "Ââåäèòå # àáèòóðèåíòà, äàííûå êîòîðîãî íóæíî èçìåíèòü:\n";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ # Ð°Ð±Ð¸Ñ‚ÑƒÑ€Ð¸ÐµÐ½Ñ‚Ð°, Ð´Ð°Ð½Ð½Ñ‹Ðµ ÐºÐ¾Ñ‚Ð¾Ñ€Ð¾Ð³Ð¾ Ð½ÑƒÐ¶Ð½Ð¾ Ð¸Ð·Ð¼ÐµÐ½Ð¸Ñ‚ÑŒ:\n";
 	std::cin >> target;
 	for (int i = 0; i < size; ++i) {
 		if (applicants[i].id == target) {
@@ -17,7 +17,7 @@ applicant* Delete_applicant(applicant* applicants, int& size)
 {
 	applicant* less_applicants = new applicant [--size];
 	int target;
-	std::cout << "Ââåäèòå # àáèòóðèåíòà, çàïèñü î êîòîðîì íóæíî óäàëèòü:\n";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ # Ð°Ð±Ð¸Ñ‚ÑƒÑ€Ð¸ÐµÐ½Ñ‚Ð°, Ð·Ð°Ð¿Ð¸ÑÑŒ Ð¾ ÐºÐ¾Ñ‚Ð¾Ñ€Ð¾Ð¼ Ð½ÑƒÐ¶Ð½Ð¾ ÑƒÐ´Ð°Ð»Ð¸Ñ‚ÑŒ:\n";
 	std::cin >> target;
 	for (int i = 0, j = 0; i < size; ++i) {
 		if (applicants[i].id == target) {
